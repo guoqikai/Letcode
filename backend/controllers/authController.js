@@ -20,7 +20,10 @@ function authenticateToken(req, res, next) {
 function tryAuthenticateToken(req, res, next) {
     const token = req.cookies.jwt;
   
-  if (!token || token === "") next();
+  if (!token || token === "") { 
+    next();
+    return;
+  }
 
   jwt.verify(token, TOKEN_SECRET, (err, uid) => {
     console.log(err);
