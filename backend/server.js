@@ -19,9 +19,10 @@ app.use(cookieParser());
 
 
 // database connection
+const port = process.env.PORT || 5000;
 const dbURI = 'mongodb+srv://letcode:letcode123456@letcode.4epuu.mongodb.net/Letcode?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(res => app.listen(3000))
+    .then(res => app.listen(port))
     .catch(err => console.log(err))
 
 app.use(express.static(__dirname + "/../frontend/build"));
