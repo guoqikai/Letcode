@@ -96,7 +96,7 @@ async function login(req, res) {
 };
 
 async function logout(req, res) {
-  res.cookie("jwt", "", { maxAge: 1 }).status(200).send();
+  res.cookie("jwt", null, { maxAge: 1 }).status(200).send();
 };
 
 module.exports = {
