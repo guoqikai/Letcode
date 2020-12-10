@@ -1,0 +1,57 @@
+
+
+
+.testcase-view-sm-body-disable {
+    height: 60px;
+    cursor:not-allowed;
+}
+
+.testcase-card-hover-default:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgb(240, 240, 240);
+}
+
+.testcase-card-hover-running {
+    background-color: rgb(240, 240, 240);
+    transition: 0.2s;
+    cursor: default;
+}
+
+
+.testcase-card-hover-pass {
+    background-color: #d0ffdb;
+    transition: 0.2s;
+    cursor: default;
+}
+
+.testcase-card-hover-pass:hover {
+    background-color: #7ce494;
+}
+
+.testcase-card-hover-fail {
+    background-color: #ffd3d7;
+    transition: 0.2s;
+    cursor: default;
+}
+
+.testcase-card-hover-fail:hover {
+    background-color: #ffa4ae;
+}
+
+.testcase-fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

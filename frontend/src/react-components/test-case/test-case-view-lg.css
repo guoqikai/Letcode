@@ -1,0 +1,44 @@
+.cm-s-answer-editor {
+    height: calc(65vh - 68px) ;
+}
+
+.answer-console {
+    height: calc(35vh - 35px);
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.answer-console-title {
+    height: 30px;
+    padding-left: 10px;
+    color: gray;
+    background-color: #f7f7f7;
+}
+
+.answer-console-body {
+    word-wrap: break-word;
+    overflow-y: scroll;
+    padding: 15px;
+    height: calc(100% - 30px);
+}
+
+
+.answer-console-text {
+    font-size: 15px;
+}
+
+.answer-info-tab {
+    height: calc(100vh - 112px);
+    overflow-y: scroll;
+}
+
+.answer-info-body {
+    height: calc(100vh - 162px);
+    overflow-y: scroll;
+}
+
+.answer-button-group {
+    height: 44px;
+    border-top: 1px solid #dee2e6;
+}
+

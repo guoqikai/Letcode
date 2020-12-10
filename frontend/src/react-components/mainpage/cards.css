@@ -1,0 +1,63 @@
+.question-of-the-day-topic{
+    margin-left: 2.5%;
+    margin-top:0px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.question-of-the-day-reply{
+    margin-left: 5%;
+}
+
+.question-card{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.question-title{
+    margin-left:1.5%;
+    margin-top:0px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.question-description{
+    font-size: 15px;
+    margin-left: 0.5%;
+}
+
+.star-icon{
+    margin-top: 2%;
+    margin-left: 93%;
+    position: absolute;
+    z-index: 1;
+}
+
+.upvote-number{
+    margin-left: 10%;
+    color: grey;
+    font-weight: bold;
+}
+
+.reply-number{
+    margin-left: 20%;
+    color: grey;
+    font-weight: bold;
+}
+
+.search-bar-background{
+    height: 50px;
+
+}
+
+.search-input{
+    margin-left:2%;
+    width:90%;
+    height: 100%;
+}
+
+.search-icon{
+    margin-left: 3%;
+    margin-top: 0.5%;
+    position: absolute;
+}

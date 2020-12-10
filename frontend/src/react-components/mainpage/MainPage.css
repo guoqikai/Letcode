@@ -1,0 +1,41 @@
+
+.question-of-the-day-title{
+    font:"20px";
+    color:gray;
+    margin-left:10%;
+}
+
+.question-of-the-day-card{
+    margin-left: 10.5%;
+    width: 79%;
+    padding: 0.5%;
+    background-color: #dee2e6
+
+}
+
+.search-bar{
+    margin-left: 10%;
+    width: 80%;
+    padding :0.5%;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.filter-rows{
+    margin-bottom: 3%;
+}
+
+.sortby-filter{
+    position: absolute;
+    margin-left: 10.5%;
+}
+
+.question-card{
+    margin-left: 10.5%;
+    width: 79%;
+    padding : 0.5%;
+}
+
+.list-group{
+    width: 100%;
+}

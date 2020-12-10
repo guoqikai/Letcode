@@ -1,0 +1,83 @@
+
+.cm-s-view-answer-editor {
+  height: auto;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.indanswer {
+  border: 1px solid lightgrey;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: relative;
+} 
+
+.answerText {
+  margin-right: 70px;
+  display: inline;
+}
+
+.answerProfile{
+  display: inline;
+}
+
+.answerHedaer {
+  margin-left: 10px;
+  display: block;
+}
+
+.answerButtons{
+  top: 10px;
+  right: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.answerButton {
+  margin-right: 10px;
+  display: block;
+  position: relative;
+  right: 0px;
+  margin-bottom: 2px;
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.answerButton:hover {
+  background-color: rgba(214, 214, 214, 0.836);
+}
+
+.answerProfilePic{
+  border-radius: 8px;
+  height: 80px;
+  width: 80px;
+  display: block;
+}
+
+.postContent{
+	width: 60%;
+  float: left;
+}
+
+.answerComment{
+  margin: auto;
+  width: 70%;
+}
+
+.replyImg{
+  border-radius: 50%;
+    width: 5%;
+    margin-left: 5%;
+}
+
+.commentSolution{
+  margin: auto;
+  width: 70%;
+}

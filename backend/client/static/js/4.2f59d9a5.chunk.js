@@ -1,0 +1,2 @@
+(this.webpackJsonpletcode=this.webpackJsonpletcode||[]).push([[4],{167:function(e,t,o){"use strict";o.r(t),t.default=function(){return new Worker(o.p+"static/js/pyodide.worker.912f928c.worker.js")}}}]);
+//# sourceMappingURL=4.2f59d9a5.chunk.js.map
