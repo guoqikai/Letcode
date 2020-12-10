@@ -2,17 +2,17 @@ const Answer = require('../models/answerModel');
 const User = require('../models/userModel');
 
 module.exports.getAnswers = async (req, res) =>{
-    Answer.find()
-        .then((answers) => {
-            if (answers === undefined || answers === null){
-                res.status(400).send();
-            }else{
-                res.status(200).send(answers)
-            }
-        })
-        .catch(err => {
-            console.log(err)
-        })
+    Answer.find({ question: req.params.question_id})
+      .then((answers) => {
+        if (answers === undefined || answers === null) {
+          res.status(400).send();
+        } else {
+          res.status(200).send(answers);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
 }
 
 module.exports.postAnswer = async (req, res) =>{
