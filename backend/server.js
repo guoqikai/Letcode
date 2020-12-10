@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const http = require("http");
 
 const authRoute = require("./routes/authRoute");
 const userRoute = require("./routes/userRoute");
@@ -19,10 +20,9 @@ app.use(cookieParser());
 
 
 // database connection
-const port = process.env.PORT || 5000;
+
 const dbURI = 'mongodb+srv://letcode:letcode123456@letcode.4epuu.mongodb.net/Letcode?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(res => app.listen(port))
     .catch(err => console.log(err))
 
 app.use(express.static(__dirname + "/../frontend/build"));
@@ -37,4 +37,7 @@ app.use('/api/testcase', testcaseRoute);
 app.get("*", (req, res) => {
     res.sendFile(path.resolve("../frontend/build/index.html"));
 });
-// handle 404 page not found 
+
+const port = process.env.PORT || 5000;
+const server = http.createServer(app);
+server.listen(port, () => console.log(`Listening on port ${port}...`));// handle 404 page not found 
