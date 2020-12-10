@@ -7,7 +7,7 @@ const TOKEN_SECRET = "I'm a furniture.jpg";
 
 function authenticateToken(req, res, next) {
     const token = req.cookies.jwt;
-  if (!token) return res.status(401).send();
+  if (!token || token === "") return res.status(401).send();
 
   jwt.verify(token, TOKEN_SECRET, (err, uid) => {
     console.log(err);
@@ -20,7 +20,7 @@ function authenticateToken(req, res, next) {
 function tryAuthenticateToken(req, res, next) {
     const token = req.cookies.jwt;
   
-  if (!token) next();
+  if (!token || token === "") next();
 
   jwt.verify(token, TOKEN_SECRET, (err, uid) => {
     console.log(err);
@@ -96,7 +96,7 @@ async function login(req, res) {
 };
 
 async function logout(req, res) {
-  res.cookie("jwt", null, { maxAge: 1 }).status(200).send();
+  res.cookie("jwt", "", { maxAge: 1 }).status(200).send();
 };
 
 module.exports = {
