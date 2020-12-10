@@ -154,7 +154,11 @@ class AddtestCaseForm extends React.Component {
                             onAdd(result);
                             return;
                         }
-                        this.setState({ nameError: nameError, descError:descError})
+                        this.setState({
+                          nameError: nameError,
+                          descError: descError,
+                          vars: varsCp
+                        });
                     }}>Add</button>
                 </div>
             </form>
