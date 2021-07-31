@@ -49,7 +49,7 @@ const PythonToLetCodeCodeMapper =
             return "true"
         return "false"
     if type(python_object) == str:
-        return '"{}"'.format(python_object)
+        return "'{}'".format(python_object)
     return str(python_object)
     `;
 
