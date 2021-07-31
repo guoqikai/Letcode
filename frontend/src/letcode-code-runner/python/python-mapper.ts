@@ -41,7 +41,7 @@ const PythonLetCodeCodeMapperFuncName = "____letcode_code_mapper____"
 const PythonToLetCodeCodeMapper =
 `def ${PythonLetCodeCodeMapperFuncName}(python_object: any) -> str:
     if type(python_object) == dict:
-        return "{" + ",".join([${PythonLetCodeCodeMapperFuncName}(k) + ":" + ${PythonLetCodeCodeMapperFuncName}(v) for (k, v) in python_object]) + "}"
+        return "{" + ",".join([${PythonLetCodeCodeMapperFuncName}(k) + ":" + ${PythonLetCodeCodeMapperFuncName}(v) for (k, v) in python_object.items()]) + "}"
     if type(python_object) == list:
         return "[" + ",".join([${PythonLetCodeCodeMapperFuncName}(v) for v in python_object])  + "]"
     if type(python_object) == bool:
