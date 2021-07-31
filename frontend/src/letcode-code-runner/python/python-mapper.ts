@@ -48,6 +48,8 @@ const PythonToLetCodeCodeMapper =
         if python_object:
             return "true"
         return "false"
+    if tyoe(python_object) == str:
+        return '"{}"'.format(python_object)
     return str(python_object)
     `;
 
